@@ -87,8 +87,8 @@ void getScale(int error, int previousError){
 
 //Working
 void move(int error, int scale){
-  int speedLeft = 75;
-  int speedRight = 75;
+  int speedLeft = 35;
+  int speedRight = 35;
   if(scale < 0) scale*= -1;
   if(scale > 254) scale = 254;
   
@@ -98,8 +98,8 @@ void move(int error, int scale){
     speedRight = -254
   }else if(error == 0){
     printf("GOING FORWARDS");
-    speedLeft = 55;
-    speedRight = 55;
+    speedLeft = 35;
+    speedRight = 35;
   }else if(error < 0){
     printf("GOING RIGHT");
     speedLeft+=scale;
